@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz do Respeito</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><h1>Quiz do Respeito 🤝</h1></header>
+
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="bullying.html">Bullying</a>
+    <a href="cyber.html">Cyberbullying</a>
+    <a href="impactos.html">Impactos</a>
+    <a href="combate.html">Como Combater</a>
+    <a href="ajuda.html">Ajuda</a>
+  </nav>
+
+  <section style="background:#f0f0f0; text-align:center;">
+    <h2>Pergunta:</h2>
+    <p>Se você vê um colega sofrendo bullying, o que você deve fazer?</p>
+    <button onclick="responder('a')">Ignorar, não é problema meu</button>
+    <button onclick="responder('b')">Ajudar e contar para um adulto</button>
+    <button onclick="responder('c')">Rir junto com os outros</button>
+
+    <div class="resultado" id="resultado"></div>
+  </section>
+
+  <footer><p>&copy; 2025 - Projeto Conscientização Escolar</p></footer>
+
+  <script>
+    function responder(opcao) {
+      let resultado = document.getElementById('resultado');
+      if (opcao === 'b') {
+        resultado.innerHTML = "✅ Parabéns! Essa é a atitude correta: ajudar e contar para um adulto.";
+      } else {
+        resultado.innerHTML = "❌ Ops! Essa não é a melhor escolha. Sempre ajude e procure um adulto responsável.";
+      }
+    }
+  </script>
+</body>
+</html>
